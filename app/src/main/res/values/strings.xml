@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Master Tiger</string>
+	<string name="label_splash_screen">Splash Screen</string>
+	<string name="label_home_screen">Home Screen</string>
+
+</resources>
