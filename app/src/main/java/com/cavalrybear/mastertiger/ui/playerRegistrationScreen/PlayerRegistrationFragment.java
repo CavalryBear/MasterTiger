@@ -1,4 +1,4 @@
-package com.cavalrybear.mastertiger.ui.homeScreen;
+package com.cavalrybear.mastertiger.ui.playerRegistrationScreen;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,31 +10,31 @@ import com.cavalrybear.mastertiger.R;
 import com.cavalrybear.mastertiger.ui.BaseNavigationFragment;
 
 /**
- * Created by Alex on 4/22/2015.
+ * Created by Alex on 4/30/2015.
  */
-public class HomeFragment extends BaseNavigationFragment<HomeCallbacks>
+public class PlayerRegistrationFragment extends BaseNavigationFragment<PlayerRegistrationCallbacks>
 {
 	public static Fragment getInitialContent()
 	{
-		return new HomeFragment();
+		return new PlayerRegistrationFragment();
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-		View mView = inflater.inflate(R.layout.home_screen, container, false);
+		View mView = inflater.inflate(R.layout.player_registration_screen, container, false);
 
-		mView.findViewById(R.id.home_screen_button_tournament).setOnClickListener(mTournamentButtonListener);
+		mView.findViewById(R.id.player_registration_screen_button_tournament).setOnClickListener(mTournamentButtonListener);
 
 		return mView;
 	}
 
 	@Override
-	public HomeCallbacks getDummyCallbacks()
+	public PlayerRegistrationCallbacks getDummyCallbacks()
 	{
-		return new HomeCallbacks()
+		return new PlayerRegistrationCallbacks()
 		{
-			@Override public void onGoToTournamentConfig() {}
+			public void onGoToTournamentConfig() {}
 		};
 	}
 

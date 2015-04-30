@@ -27,5 +27,7 @@ public class SplashActivity extends BaseFragmentActivity implements SplashCallba
 
 	    this.startActivity(intent);
 	    overridePendingTransition(R.anim.animation_activity_in, R.anim.animation_activity_out);
+
+	    this.finish();
     }
 }

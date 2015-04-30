@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Tournament Config Screen"
+		android:textSize="24sp"
+		android:layout_gravity="center"
+		/>
+
+	<RelativeLayout
+		android:id="@+id/tournament_screen_button_player_registration"
+		android:layout_width="250dp"
+		android:layout_height="75dp"
+		android:layout_marginTop="100dp"
+		android:background="@color/purple"
+		android:layout_gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="To Player Registration"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/tournament_screen_button_swiss"
+		android:layout_width="250dp"
+		android:layout_height="75dp"
+		android:layout_marginTop="50dp"
+		android:background="@color/purple"
+		android:layout_gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="To First Swiss Round"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			/>
+
+	</RelativeLayout>
+
+</LinearLayout>

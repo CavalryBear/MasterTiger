@@ -7,5 +7,5 @@ import com.cavalrybear.mastertiger.ui.BaseNavigationFragment;
  */
 public interface HomeCallbacks extends BaseNavigationFragment.VoidCallbacks
 {
-
+	public void onGoToTournamentConfig();
 }

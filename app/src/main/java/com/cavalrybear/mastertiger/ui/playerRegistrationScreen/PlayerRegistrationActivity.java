@@ -1,4 +1,4 @@
-package com.cavalrybear.mastertiger.ui.homeScreen;
+package com.cavalrybear.mastertiger.ui.playerRegistrationScreen;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,14 +9,13 @@ import com.cavalrybear.mastertiger.ui.BaseFragmentActivity;
 import com.cavalrybear.mastertiger.ui.tournamentConfigScreen.TournamentConfigActivity;
 
 /**
- * Created by Alex on 4/22/2015.
+ * Created by Alex on 4/30/2015.
  */
-
-public class HomeActivity extends BaseFragmentActivity implements HomeCallbacks
+public class PlayerRegistrationActivity extends BaseFragmentActivity implements PlayerRegistrationCallbacks
 {
 	public static Intent getIntent(Context context)
 	{
-		Intent intent = new Intent(context, HomeActivity.class);
+		Intent intent = new Intent(context, PlayerRegistrationActivity.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		return intent;
 	}
@@ -24,7 +23,7 @@ public class HomeActivity extends BaseFragmentActivity implements HomeCallbacks
 	@Override
 	protected Fragment getInitialContent()
 	{
-		return HomeFragment.getInitialContent();
+		return PlayerRegistrationFragment.getInitialContent();
 	}
 
 	@Override
